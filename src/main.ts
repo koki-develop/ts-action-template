@@ -1,6 +1,6 @@
 import * as core from "@actions/core";
 
-(async () => {
+const main = async () => {
   try {
     const inputs = {
       message: core.getInput("message"),
@@ -12,4 +12,6 @@ import * as core from "@actions/core";
     if (error instanceof Error) core.setFailed(error.message);
     throw error;
   }
-})();
+};
+
+await main();
