@@ -1,15 +1,7 @@
 # ts-action-template
 
-To install dependencies:
+This is a template for creating GitHub Actions in TypeScript.
 
-```bash
-bun install
-```
+# LICENSE
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.21. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+[MIT](./LICENSE)
