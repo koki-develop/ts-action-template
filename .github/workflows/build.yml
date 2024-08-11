@@ -26,7 +26,7 @@ jobs:
           git diff --quiet --exit-code --staged ./dist
 
       - uses: peter-evans/create-pull-request@v6
-        if: steps.check.outcome == 'failure'
+        if: ${{ failure() && steps.check.outcome == 'failure' }}
         with:
           token: ${{ github.token }}
           title: Build ${{ github.ref }}
