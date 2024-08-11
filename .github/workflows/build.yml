@@ -31,3 +31,7 @@ jobs:
           token: ${{ github.token }}
           title: Build ${{ github.ref_name }}
           branch: build/${{ github.ref_name }}
+          commit-message: Build ${{ github.ref_name }}
+          body: |
+            This PR was automatically created by the Build workflow.
+            It contains the changes in the ./dist directory.
