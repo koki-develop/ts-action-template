@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import * as core from "@actions/core";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { main } from "./main";
 
 vi.mock("@actions/core");
