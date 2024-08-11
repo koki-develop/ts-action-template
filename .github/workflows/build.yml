@@ -29,5 +29,5 @@ jobs:
         if: ${{ failure() && steps.check.outcome == 'failure' }}
         with:
           token: ${{ github.token }}
-          title: Build ${{ github.ref }}
-          branch: build/${{ github.ref }}
+          title: Build ${{ github.ref_name }}
+          branch: build/${{ github.ref_name }}
