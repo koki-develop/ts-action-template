@@ -19,6 +19,9 @@ jobs:
       - run: bun run lint
 
   run-action:
+    needs:
+      - test
+      - lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
