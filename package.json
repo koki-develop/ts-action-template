@@ -9,6 +9,7 @@
     "node": "20.x"
   },
   "scripts": {
+    "test": "vitest",
     "lint": "biome check",
     "fmt": "biome check --write",
     "prebuild": "bun run lint",
