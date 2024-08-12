@@ -3,7 +3,6 @@
   "module": "index.ts",
   "author": "koki-develop <kou.pg.0131@gmail.com>",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "engines": {
     "node": "20.x"
