@@ -23,7 +23,7 @@
     "@types/bun": "latest",
     "@vercel/ncc": "0.38.1",
     "husky": "9.1.4",
-    "lint-staged": "15.2.8",
+    "lint-staged": "15.2.9",
     "typescript": "5.5.4",
     "vitest": "2.0.5"
   }
