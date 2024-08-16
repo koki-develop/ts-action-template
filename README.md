@@ -36,7 +36,7 @@ $ bun run test
 
 ## Release
 
-Run `bun run build` to build the source code. The built code will be output to the `dist/` directory. Commit the content of this directory.
+First, run `bun run build` to build the source code. The built code will be output to the `dist/` directory. Commit the content of this directory.
 
 ```console
 $ bun run build
@@ -44,9 +44,10 @@ $ git add dist
 $ git commit -m "Build"
 ```
 
-Create a tag in semver format.
+Finally, create a tag in semver format.
+
 > [!NOTE]
-> The major version tag (e.g. `v1`) is created automatically by GitHub Actions.  
+> The major version tag (e.g. `v1`) will be created automatically by GitHub Actions.  
 > See: [`.github/workflows/major-version-sync.yml`](./.github/workflows/major-version-sync.yml)
 
 ```console
