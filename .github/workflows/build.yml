@@ -29,7 +29,10 @@ jobs:
         id: check
         run: |
           git add ./dist
-          git diff --quiet --exit-code --staged ./dist
+          if ! git diff --quiet --exit-code --staged ./dist; then
+            echo "Action is not built"
+            exit 1
+          fi
 
       - uses: peter-evans/create-pull-request@v6
         if: ${{ failure() && steps.check.outcome == 'failure' }}
