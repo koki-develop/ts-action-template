@@ -34,7 +34,7 @@ jobs:
             exit 1
           fi
 
-      - uses: peter-evans/create-pull-request@v6
+      - uses: peter-evans/create-pull-request@v7
         if: ${{ failure() && steps.check.outcome == 'failure' }}
         with:
           token: ${{ github.token }}
