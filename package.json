@@ -1,7 +1,6 @@
 {
   "name": "ts-action-template",
   "module": "index.ts",
-  "author": "koki-develop <kou.pg.0131@gmail.com>",
   "private": true,
   "type": "module",
   "engines": {
