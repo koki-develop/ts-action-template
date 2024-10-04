@@ -15,7 +15,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@actions/core": "1.11.0"
+    "@actions/core": "1.11.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.3",
