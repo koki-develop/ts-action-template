@@ -25,7 +25,6 @@ jobs:
       - uses: koki-develop/major-version-sync@v1
         with:
           version: ${{ steps.bump.outputs.new-version }}
-          token: ${{ github.token }}
 
       - name: Create release
         env:
