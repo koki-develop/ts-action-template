@@ -44,18 +44,19 @@ $ git add dist
 $ git commit -m "Build"
 ```
 
-Finally, create a tag in semver format.
+Finally, run the [release workflow](./.github/workflows/release.yml).  
+Tag creation and release creation are automatically performed.
 
-> [!NOTE]
-> The major version tag (e.g. `v1`) will be created automatically by GitHub Actions.  
-> See: [`.github/workflows/major-version-sync.yml`](./.github/workflows/major-version-sync.yml)
+```sh
+# patch version
+$ gh workflow run release.yml -f level=patch
 
-```console
-$ git tag v1.0.0
-$ git push origin v1.0.0
+# minor version
+$ gh workflow run release.yml -f level=minor
+
+# major version
+$ gh workflow run release.yml -f level=major
 ```
-
-Create a release on GitHub as needed.
 
 ## LICENSE
 
