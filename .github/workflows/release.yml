@@ -1,0 +1,41 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      level:
+        type: choice
+        description: The level of the bump.
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: koki-develop/bump-semver-action@v1
+        id: bump
+        with:
+          level: ${{ inputs.level }}
+
+      - uses: koki-develop/major-version-sync@v1
+        with:
+          version: ${{ steps.bump.outputs.new-version }}
+          token: ${{ github.token }}
+
+      - name: Create release
+        env:
+          CURRENT_VERSION: ${{ steps.bump.outputs.current-version }}
+          NEW_VERSION: ${{ steps.bump.outputs.new-version }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${NEW_VERSION}" \
+            --title "${NEW_VERSION}" \
+            --generate-notes \
+            --notes-start-tag "${CURRENT_VERSION}"
