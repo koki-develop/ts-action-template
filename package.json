@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "scripts": {
     "test": "vitest",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "20.17.40",
+    "@types/node": "22.15.14",
     "@vercel/ncc": "0.38.3",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
