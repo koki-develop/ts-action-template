@@ -8,7 +8,7 @@
       },
       "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "@types/node": "20.17.43",
+        "@types/node": "20.17.52",
         "@vercel/ncc": "0.38.3",
         "husky": "9.1.7",
         "lint-staged": "15.5.2",
@@ -128,7 +128,7 @@
 
     "@types/estree": ["@types/estree@1.0.5", "", {}, "sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw=="],
 
-    "@types/node": ["@types/node@20.17.43", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-DnDEcDUnVAUYSa7U03QvrXbj1MZj00xoyi/a3lRGkR/c7BFUnqv+OY9EUphMqXUKdZJEOmuzu2mm+LmCisnPow=="],
+    "@types/node": ["@types/node@20.17.52", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-2aj++KfxubvW/Lc0YyXE3OEW7Es8TWn1MsRzYgcOGyTNQxi0L8rxQUCZ7ZbyOBWZQD5I63PV9egZWMsapVaklg=="],
 
     "@vercel/ncc": ["@vercel/ncc@0.38.3", "", { "bin": { "ncc": "dist/ncc/cli.js" } }, "sha512-rnK6hJBS6mwc+Bkab+PGPs9OiS0i/3kdTO+CkI8V0/VrW3vmz7O2Pxjw/owOlmo6PKEIxRSeZKv/kuL9itnpYA=="],
 
